@@ -109,8 +109,9 @@ h1 {
 
 .workspace {
   display: grid;
-  grid-template-columns: minmax(280px, 360px) 1fr;
+  grid-template-columns: minmax(280px, 340px) 1fr;
   gap: 18px;
+  align-items: start;
 }
 
 .panel, .list-panel {
@@ -123,6 +124,12 @@ h1 {
 .panel h2, .list-panel h2 {
   margin: 0 0 14px;
   font-size: 20px;
+}
+
+input:disabled, select:disabled, textarea:disabled {
+  background: #f1f4f8;
+  color: #69758c;
+  cursor: not-allowed;
 }
 
 .form-grid {
